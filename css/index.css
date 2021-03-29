@@ -1,0 +1,332 @@
+body{
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  background-image: url("../images/Skills_Background-image.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  padding-top: 110px;
+  margin: 0px;
+}
+p{
+  font-size: 20px;
+  color: #2E7476;
+  text-align: justify;
+}
+.heroImg p{
+  padding-right: 50px;
+  padding-left: 50px;
+}
+h1{
+  font-size: 40px;
+  font-weight: 200px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(1, 59, 59);
+  text-align: center;
+}
+h3{
+  font-size: 30px;
+  margin: 15px;
+  font-weight: 200px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(1, 59, 59);
+  text-align: center;
+}
+
+button{
+  background-color: white;
+  color: #2E7476;
+  border: 3px solid #2E7476;
+  padding: 14px 34px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+.button2{
+  display: inline-block;
+  background-color: white;
+  color: #2E7476;
+  border: 3px solid #2E7476;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+.heroImg img{
+  width: 75%;
+  max-width: 600px;
+}
+.content{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*Top Navigation*/
+#fixedHeader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  background-color: #e8c9adb9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header ul{
+  display: inline-block;
+  width: -webkit-fill-available;
+  vertical-align: middle;
+  padding-right: 40px;
+  margin: none;
+}
+header li{
+  display: inline-block;
+  padding-right:15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  color: #2E7476;
+  line-height: 30px;
+  font-size: 15pt;  
+}
+header .floatleft {
+  float:left;
+  padding-left: 30px;
+  padding-top: 12px;
+}
+header .floatright {
+  float:right;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.logo{
+  display: inline-block;
+  width: 20%;
+  padding: 1%;
+  text-align: center;
+}
+
+/*My Skills Page*/
+.mySkills{
+  text-align: center;
+  margin-top: 200px;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.flexContainer h3{
+  text-align: left;
+}
+.flexContainer h4 {
+  text-align: left;
+}
+.mySkills img{
+  width: 100%;
+  min-width: 350px;
+}
+
+/*My Work Page*/
+#workGrid{
+  display: grid;
+  margin: 0px 5%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "GDRNT GDRNT"
+  "CSA TOTO"
+  ;
+}
+.categoryGridArea{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: 20px;
+  display: grid;
+  align-content: end;
+  border-radius: 15px;
+}
+.heading{
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.subHeading{
+  text-align: center;
+  margin: 50px auto;
+}
+#GDRNT{
+  grid-area: GDRNT;
+  background-color: rgb(206, 206, 206);
+  background-image: url("../images/HP_GDRNT_Phones.png");
+}
+#CSA{
+  grid-area: CSA;
+  background-color: rgb(206, 206, 206);
+  background-image: url("../images/HP_Astronaut.png");
+}
+#TOTO{
+  grid-area: TOTO;
+  background-color: rgb(206, 206, 206);
+  background-image: url("../images/HP_Dog2.jpg");
+}
+
+/*FOOTER*/
+footer {
+  display: block;
+  width: 100%;
+  background-color: #2E7476;
+  color: #E8C9AD;
+  margin-top: 50px;
+  font-weight: 500;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
+
+}
+footer ul {
+  display: inline-block;
+  width: -webkit-fill-available;
+  padding-right: 40px;
+}
+footer li {
+  display: inline-block;
+  padding: 10px;
+  color: #E8C9AD;
+  font-size: 15pt;
+}
+.floatleft {
+  float:left;
+  line-height: 50px;
+}
+.floatright {
+  float:right;
+  line-height: 50px;
+}
+
+/*social media icons*/
+.fa {
+  padding: 8px;
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.8;
+}
+.fa-facebook {
+  background: #E8C9AD;
+  color: #1A2F30;
+}
+.fa-linkedin {
+  background: #E8C9AD;
+  color: #1A2F30;
+}
+
+/*Media Query*/
+@media only screen and (max-width: 1000px) {
+  .flexContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mySkills img{
+    width: 100%;
+    }
+  #workGrid {
+    display: block;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "GDRNT"
+    "CSA"
+    "TOTO";
+  }
+}
+@media only screen and (max-width: 600px) {
+  
+  .content{
+    width: 100%;
+    margin: 0;
+  }
+  .flexContainer {
+    flex-direction: column;
+    width: 100%;
+    background-repeat: repeat-y;
+  }
+  .mySkills{
+    width: 100%;
+    margin: 0;
+  }
+  .mySkills img{
+    width: 90%;
+    }
+  #workGrid {
+    display: block;
+    margin: 0%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas: 
+    "GDRNT"
+    "CSA"
+    "TOTO";
+  }
+  .floatright {
+    float: none;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .floatleft {
+    float: none;
+    line-height: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+  #fixedHeader{
+    width: 100%;
+  }
+  header .floatright {
+    display: block;
+    float: right;
+    text-align: right;
+    width: 65%;
+  }
+  header .floatleft {
+     float: left;
+  }
+  footer{
+    width: 100%;
+  }
+  header {
+    height: 110px;
+    width: 100%;
+  }
+  header li{
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+  body{
+    padding-top: 130px;
+  }
+}
