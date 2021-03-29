@@ -11,14 +11,35 @@ p{
   color: #2E7476;
   text-align: justify;
 }
-.heroImg p{
-  padding-right: 50px;
-  padding-left: 50px;
+#heroGrid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "flexContainer HeroImg"
 }
+.heroImg{
+  text-align: center;
+  padding-top: 20px;
+}
+.heroImg img{
+  width: 75%;
+  max-width: 600px;
+  padding-bottom: 20px;
+}
+
 h1{
   font-size: 40px;
   font-weight: 200px;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: rgb(1, 59, 59);
+  text-align: center;
+}
+h2{
+  font-size: 30px;
+  font-weight: 200px;
+  font-family: 'Didact Gothic', 'Open Sans', sans-serif;
   color: rgb(1, 59, 59);
   text-align: center;
 }
@@ -58,15 +79,6 @@ button{
   cursor: pointer;
 }
 
-.heroImg img{
-  width: 75%;
-  max-width: 600px;
-}
-.content{
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
 
 /*Top Navigation*/
 #fixedHeader{
@@ -84,7 +96,7 @@ header {
 }
 header ul{
   display: inline-block;
-  width: -webkit-fill-available;
+  width: 100%;
   vertical-align: middle;
   padding-right: 40px;
   margin: none;
@@ -117,30 +129,34 @@ header .floatright {
   text-align: center;
 }
 
-/*My Skills Page*/
-.mySkills{
-  text-align: center;
-  margin-top: 200px;
-}
+/*Left Hero*/
+
 .flexContainer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content: space-evenly;
-  width: 100%;
-  margin-bottom: 100px;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 40px;
 }
-.flexContainer h3{
+.flexContainer h1{
+  text-align: left;
+  font-size: 50px;
+  margin: 0px;
+  
+}
+.flexContainer h2 {
+  text-align: left;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.flexContainer h3 {
   text-align: left;
 }
-.flexContainer h4 {
-  text-align: left;
-}
-.mySkills img{
-  width: 100%;
+
+.flexContainer img {
+  width: 70%;
   min-width: 350px;
 }
+
 
 /*My Work Page*/
 #workGrid{
