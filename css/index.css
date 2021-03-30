@@ -1,3 +1,20 @@
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #E8C9AD;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader img {
+  animation: spin 3s ease;
+  width: 150px;
+}
+
 body{
   font-family: 'Didact Gothic', 'Open Sans', sans-serif;
   background-image: url("../images/Skills_Background-image.png");
@@ -19,13 +36,14 @@ p{
   grid-template-areas:
   "flexContainer HeroImg"
 }
+
 .heroImg{
+  display: inline-block;
   text-align: center;
   padding-top: 20px;
 }
 .heroImg img{
   width: 75%;
-  max-width: 600px;
   padding-bottom: 20px;
 }
 
@@ -352,6 +370,19 @@ footer li {
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+    width: 20%;
+  }
+  100% {
+    transform: rotate(720deg);
+    
   }
 }
 
