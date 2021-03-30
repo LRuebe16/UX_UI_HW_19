@@ -52,6 +52,14 @@ h3{
   text-align: center;
 }
 
+button:hover {
+  color: #E8C9AD;
+  background-color: #2E7476;
+}
+.button2:hover {
+  color: #E8C9AD;
+  background-color: #2E7476;
+}
 button{
   background-color: white;
   color: #2E7476;
