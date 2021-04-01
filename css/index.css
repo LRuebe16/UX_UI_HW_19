@@ -82,11 +82,12 @@ h3{
 }
 
 button:hover {
-  color: #E8C9AD;
+  color: #ffffff;
   background-color: #2E7476;
+  transform: scale(1.05);
 }
 .button2:hover {
-  color: #E8C9AD;
+  color: #ffffff;
   background-color: #2E7476;
 }
 button{
@@ -101,6 +102,7 @@ button{
   font-weight: 800;
   font-family: 'Didact Gothic', 'Open Sans', sans-serif;
   cursor: pointer;
+  transition: all .2s ease-in-out;
 }
 
 .button2{
@@ -138,14 +140,18 @@ header ul{
   padding-right: 40px;
   margin: none;
 }
+
+header li a:hover{
+  background-color: #2E7476;
+  color: #E8C9AD;
+  background-size:contain;
+}
 header li{
   display: inline-block;
-  padding-right:15px;
-  padding-left: 15px;
-  padding-top: 10px;
   color: #2E7476;
   line-height: 30px;
   font-size: 15pt;  
+  margin: 20px 0px 20px -4px;
 }
 header .floatleft {
   float:left;
@@ -155,8 +161,6 @@ header .floatleft {
 header .floatright {
   float:right;
   line-height: 20px;
-  padding-top: 10px;
-  padding-right: 20px;
 }
 
 .logo{
@@ -190,7 +194,10 @@ header .floatright {
   margin: 0px;
 }
 
-a { color: #2E7476; text-decoration: none; }
+a { color: #2E7476; 
+  text-decoration: none;
+  padding: 24px;
+ }
 
 .arrow {
   text-align: center;
@@ -224,7 +231,7 @@ html {
 
 #myBtn:hover {
   background-color: #2E7476;
-  color: #E8C9AD;
+  color: #ffffff;
 }
 
 /*My Work Page*/
