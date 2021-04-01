@@ -20,9 +20,7 @@ body{
   background-image: url("../images/Skills_Background-image.png");
   background-size: 100%;
   background-repeat: repeat-y;
-  
   margin: 0px;
-  width: revert;
 }
 p{
   font-size: 20px;
@@ -341,14 +339,15 @@ footer {
   background-color: #2E7476;
   color: #E8C9AD;
   font-family: Arial, Helvetica, sans-serif;
+  height: 90px;
 }
 footer .regText{
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 33px;
   font-weight: 200px;
+  line-height: 70px;
 }
 footer ul {
-  display: inline-block;
   width: -webkit-fill-available;
   padding-right: 100px;
   padding-left: 100PX;
@@ -361,11 +360,9 @@ footer li {
 }
 .floatleft {
   float:left;
-  line-height: 50px;
 }
 .floatright {
   float:right;
-  line-height: 60px;
 }
 
 /*social media icons*/
