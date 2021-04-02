@@ -35,6 +35,7 @@ p{
 #heroGrid{
   display: grid;
   width: 100%;
+  padding-top: 50px;
   height: calc(100vh - 150px);
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
@@ -54,6 +55,7 @@ p{
 }
 .heroImg img{
   width: 75%;
+  min-width: 550px;
 }
 
 h1{
